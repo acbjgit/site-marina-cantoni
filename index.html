@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marina Cantoni | Personal Trainer</title>
+  <meta name="description" content="Treinos personalizados, avaliação física e consultoria online com Marina Cantoni. Team Marinexx: mulheres fortes, vidas mais saudáveis e resultados reais." />
+  <meta name="theme-color" content="#8b4cf6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#08070b; --bg2:#121019; --card:#18131f; --card2:#22182b;
+      --text:#fbf7ff; --muted:#d9cfe5; --soft:#a99bb6;
+      --pink:#ff9ac6; --pink2:#f47db4; --purple:#8b4cf6; --lilac:#e6d7ff;
+      --line:rgba(255,255,255,.12); --shadow:0 30px 80px rgba(0,0,0,.45);
+      --radius:28px; --max:1160px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(139,76,246,.22),transparent 34%),radial-gradient(circle at 90% 12%,rgba(255,154,198,.16),transparent 30%),linear-gradient(180deg,var(--bg),#0f0b13 46%,#070609);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55;overflow-x:hidden}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),calc(100% - 36px));margin-inline:auto}
+    .nav{position:fixed;z-index:30;top:14px;left:50%;transform:translateX(-50%);width:min(1080px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 14px;border:1px solid rgba(255,255,255,.12);background:rgba(8,7,11,.68);backdrop-filter:blur(18px);border-radius:999px;box-shadow:0 12px 40px rgba(0,0,0,.22)}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em}.mark{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--pink));box-shadow:0 0 0 4px rgba(255,255,255,.06);font-weight:900}.navlinks{display:flex;gap:18px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--pink)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:.22s ease;cursor:pointer;white-space:nowrap}.btn.primary{background:linear-gradient(135deg,var(--pink),var(--purple));color:white;box-shadow:0 16px 36px rgba(244,125,180,.24)}.btn.primary:hover{transform:translateY(-2px);filter:saturate(1.1)}.btn.ghost{border-color:var(--line);background:rgba(255,255,255,.05);color:var(--text)}.btn.ghost:hover{background:rgba(255,255,255,.09)}
+    .hero{position:relative;min-height:100svh;display:grid;place-items:center;padding:110px 0 58px;isolation:isolate}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,7,11,.88),rgba(8,7,11,.58) 45%,rgba(8,7,11,.22)),linear-gradient(0deg,rgba(8,7,11,.98),transparent 28%,rgba(8,7,11,.44)),url('assets/hero-marina.jpg') center/cover no-repeat;z-index:-2}.hero:after{content:"";position:absolute;inset:auto 0 0;height:28%;background:linear-gradient(0deg,var(--bg),transparent);z-index:-1}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:end}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,154,198,.35);background:rgba(255,154,198,.10);color:var(--lilac);font-weight:800;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase}.eyebrow span{width:8px;height:8px;border-radius:50%;background:var(--pink);box-shadow:0 0 18px var(--pink)}
+    h1,h2,h3{margin:0;line-height:.98} h1{font-family:'Playfair Display',serif;font-size:clamp(3.4rem,8vw,7.8rem);max-width:850px;margin-top:20px;letter-spacing:-.05em} h1 em,h2 em{font-style:normal;color:var(--pink)}.lead{font-size:clamp(1.08rem,2.1vw,1.42rem);color:var(--muted);max-width:690px;margin:26px 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-card{justify-self:end;width:min(420px,100%);padding:24px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border-radius:var(--radius);backdrop-filter:blur(16px);box-shadow:var(--shadow)}.hero-card strong{font-size:1.2rem}.hero-card ul{padding:0;margin:16px 0 0;list-style:none;display:grid;gap:12px}.hero-card li{display:flex;gap:10px;color:var(--muted)}.check{color:var(--pink);font-weight:900}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px}.stat{padding:18px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.05)}.stat b{display:block;color:var(--pink);font-size:1.6rem}.stat span{color:var(--soft);font-size:.9rem}
+    section{padding:88px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}.kicker{font-weight:900;color:var(--pink);letter-spacing:.12em;text-transform:uppercase;font-size:.84rem}.section-head h2,.story h2,.cta h2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.7rem);letter-spacing:-.045em}.section-head p{color:var(--muted);max-width:520px;margin:0;font-size:1.04rem}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{position:relative;min-height:250px;padding:24px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border-radius:var(--radius);overflow:hidden}.service:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,var(--pink),transparent 68%);opacity:.18;right:-70px;top:-70px}.icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(255,154,198,.14);color:var(--pink);font-weight:900;margin-bottom:42px}.service h3{font-size:1.35rem;margin-bottom:12px}.service p{color:var(--muted);margin:0}
+    .story{display:grid;grid-template-columns:.92fr 1.08fr;gap:36px;align-items:center}.photo-stack{position:relative}.photo-stack img{border-radius:34px;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover}.float-note{position:absolute;right:-14px;bottom:24px;max-width:270px;padding:18px;border-radius:22px;background:rgba(255,247,255,.92);color:#211727;box-shadow:0 22px 60px rgba(0,0,0,.28);font-weight:800}.story-copy{padding:8px}.story-copy p{color:var(--muted);font-size:1.08rem}.quote{margin-top:28px;padding:24px;border-left:4px solid var(--pink);background:rgba(255,154,198,.08);border-radius:0 22px 22px 0;color:var(--lilac);font-family:'Playfair Display',serif;font-size:1.6rem;line-height:1.2}
+    .benefits{display:grid;grid-template-columns:1fr 1fr;gap:16px}.benefit{display:flex;gap:16px;padding:22px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.045)}.benefit b{display:block;font-size:1.1rem}.benefit p{margin:4px 0 0;color:var(--muted)}.bullet{flex:0 0 36px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--pink));font-weight:900}
+    .program{position:relative;border-radius:40px;overflow:hidden;border:1px solid var(--line);background:url('assets/mulher-academia-costas.jpg') center/cover no-repeat;min-height:680px;display:flex;align-items:end}.program:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,7,11,.88),rgba(8,7,11,.58),rgba(8,7,11,.25)),linear-gradient(0deg,rgba(8,7,11,.86),transparent)}.program-content{position:relative;padding:46px;max-width:680px}.program h2{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5.6vw,5rem);letter-spacing:-.05em}.list{display:grid;gap:14px;margin:26px 0 0;padding:0;list-style:none}.list li{font-size:1.12rem;color:var(--muted);display:flex;gap:12px}.tagline{margin-top:26px;font-weight:900;color:var(--pink);font-size:1.4rem;text-transform:uppercase;letter-spacing:.04em}
+    .method{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:steps}.step{counter-increment:steps;padding:24px;border-radius:26px;background:linear-gradient(180deg,rgba(139,76,246,.16),rgba(255,154,198,.06));border:1px solid var(--line)}.step:before{content:counter(steps, decimal-leading-zero);display:block;color:var(--pink);font-weight:900;margin-bottom:34px}.step h3{font-size:1.18rem;margin-bottom:10px}.step p{margin:0;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.gallery img{height:100%;object-fit:cover;border-radius:28px;border:1px solid var(--line);filter:saturate(.98)}.gallery .col{display:grid;gap:16px}.gallery .col img{height:260px}
+    .contact{display:grid;grid-template-columns:1fr;gap:18px;align-items:stretch;max-width:860px}.contact-card{padding:36px;border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));border:1px solid var(--line)}.contact-card h2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.5rem);letter-spacing:-.05em}.contact-card p{color:var(--muted);font-size:1.08rem}.mini{display:grid;gap:12px;margin:24px 0}.mini a,.mini div{display:flex;align-items:center;gap:12px;color:var(--muted)}.qr-card{padding:16px;border-radius:34px;background:#efe8ff;color:#211727;display:grid;gap:12px;align-content:start}.qr-card img{border-radius:24px}.qr-card b{font-size:1.2rem}.footer{padding:34px 0 46px;color:var(--soft);border-top:1px solid var(--line);text-align:center}.mobile-cta{display:none;position:fixed;z-index:40;left:14px;right:14px;bottom:14px}.mobile-cta .btn{width:100%;box-shadow:0 14px 40px rgba(0,0,0,.45)}
+    @media(max-width:900px){.navlinks{display:none}.hero-grid,.story,.contact,.gallery{grid-template-columns:1fr}.hero{padding-top:94px}.hero-card{justify-self:start}.cards,.method{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:16px}.program{min-height:620px}.program-content{padding:30px}.mobile-cta{display:block}body{padding-bottom:74px}}
+    @media(max-width:560px){.wrap{width:min(100% - 26px,var(--max))}.nav{top:8px}.nav .btn{display:none}.brand{font-size:.94rem}h1{font-size:3.25rem}.lead{font-size:1.04rem}.stats{grid-template-columns:1fr}.cards,.method{grid-template-columns:1fr}section{padding:66px 0}.float-note{position:static;margin-top:12px;max-width:none}.program{border-radius:28px}.program-content{padding:24px}.gallery .col img{height:auto}.contact-card,.qr-card{border-radius:26px}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="brand" href="#top"><span class="mark">M</span><span>Marina Cantoni</span></a>
+    <div class="navlinks">
+      <a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#team">Team Marinexx</a><a href="#contato">Contato</a>
+    </div>
+    <a class="btn primary" href="https://wa.me/5511910300671?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20os%20treinos%20personalizados." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span></span> Personal Trainer • Educação Física</div>
+        <h1>Mais do que treino, <em>um propósito.</em></h1>
+        <p class="lead">Treinos personalizados para mulheres que querem emagrecer com saúde, ganhar força, melhorar a postura e construir uma rotina mais forte e saudável.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://wa.me/5511910300671?text=Ol%C3%A1%2C%20Marina%21%20Quero%20come%C3%A7ar%20uma%20rotina%20mais%20forte%20e%20saud%C3%A1vel." target="_blank" rel="noopener">Começar agora</a>
+          <a class="btn ghost" href="https://www.instagram.com/marinaa.ccantoni/" target="_blank" rel="noopener">Ver Instagram</a>
+        </div>
+        <div class="stats" aria-label="Diferenciais">
+          <div class="stat"><b>01</b><span>Plano individualizado</span></div>
+          <div class="stat"><b>02</b><span>Acompanhamento de perto</span></div>
+          <div class="stat"><b>03</b><span>Resultados reais</span></div>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <strong>Team Marinexx</strong>
+        <ul>
+          <li><span class="check">✓</span> Mulheres reais. Treinos personalizados.</li>
+          <li><span class="check">✓</span> Uma vida mais saudável.</li>
+          <li><span class="check">✓</span> Disciplina, força e atitude.</li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="servicos">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">O que eu faço</div><h2>Treino para viver melhor — <em>não apenas parecer melhor.</em></h2></div>
+          <p>Cada treino é personalizado, respeitando seu corpo, sua rotina e seus objetivos.</p>
+        </div>
+        <div class="cards">
+          <article class="service"><div class="icon">01</div><h3>Treinos personalizados</h3><p>Planos construídos para sua rotina, nível atual, metas e evolução.</p></article>
+          <article class="service"><div class="icon">02</div><h3>Saúde e bem-estar</h3><p>Mais disposição, menos dores e mais qualidade de vida no dia a dia.</p></article>
+          <article class="service"><div class="icon">03</div><h3>Avaliação física</h3><p>Entendimento do seu ponto de partida para orientar escolhas melhores.</p></article>
+          <article class="service"><div class="icon">04</div><h3>Consultoria online</h3><p>Acompanhamento e orientação mesmo para quem precisa de flexibilidade.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="wrap story">
+        <div class="photo-stack"><img src="assets/acompanhamento.jpg" alt="Marina Cantoni treinando na academia"></div>
+        <div class="story-copy">
+          <div class="kicker">Quem é Marina Cantoni</div>
+          <h2>Movimento, saúde, autoestima e qualidade de vida.</h2>
+          <p>Sempre apaixonada por movimento e por saúde, Marina escolheu a Educação Física para ajudar pessoas — principalmente mulheres — a se sentirem mais fortes, confiantes e bem consigo mesmas.</p>
+          <p>O trabalho vai além da academia: é sobre acolher, motivar, corrigir, adaptar e comemorar cada evolução.</p>
+          <div class="quote">Porque cuidar do corpo também é cuidar da mente, da autoestima e do futuro.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Filosofia de treino</div><h2>Treinar vai muito além da estética.</h2></div>
+          <p>Constância, disciplina e um plano que faça sentido para você.</p>
+        </div>
+        <div class="benefits">
+          <div class="benefit"><span class="bullet">✓</span><div><b>Saúde</b><p>Mais disposição, menos dores e mais qualidade de vida.</p></div></div>
+          <div class="benefit"><span class="bullet">✓</span><div><b>Postura</b><p>Um corpo mais alinhado para se movimentar melhor.</p></div></div>
+          <div class="benefit"><span class="bullet">✓</span><div><b>Longevidade</b><p>Treinar hoje para ter mais independência amanhã.</p></div></div>
+          <div class="benefit"><span class="bullet">✓</span><div><b>Resultados reais</b><p>Um processo possível, personalizado e consistente.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <div class="program">
+          <div class="program-content">
+            <div class="kicker">Team Marinexx</div>
+            <h2>Mulheres fortes. Vidas mais saudáveis. Resultados reais.</h2>
+            <ul class="list">
+              <li><span class="check">✓</span> Emagrecer com saúde</li>
+              <li><span class="check">✓</span> Ganhar massa muscular</li>
+              <li><span class="check">✓</span> Definir o corpo</li>
+              <li><span class="check">✓</span> Melhorar a postura</li>
+              <li><span class="check">✓</span> Ter mais disposição</li>
+              <li><span class="check">✓</span> Construir uma rotina saudável</li>
+              <li><span class="check">✓</span> Sentir-se mais forte e confiante</li>
+            </ul>
+            <div class="tagline">Vamos juntas?</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Como funciona</div><h2>Um acompanhamento com atenção individualizada.</h2></div>
+          <p>Marina acompanha de perto, incentiva, corrige, adapta e celebra cada evolução.</p>
+        </div>
+        <div class="method">
+          <div class="step"><h3>Conversa inicial</h3><p>Entendimento dos objetivos, rotina e momento atual.</p></div>
+          <div class="step"><h3>Avaliação</h3><p>Direção clara para montar um plano coerente.</p></div>
+          <div class="step"><h3>Plano de treino</h3><p>Treinos personalizados para corpo, rotina e meta.</p></div>
+          <div class="step"><h3>Evolução</h3><p>Ajustes, incentivo e acompanhamento para manter constância.</p></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contato">
+      <div class="wrap contact">
+        <div class="contact-card">
+          <div class="kicker">Contato</div>
+          <h2>Seu novo estilo de vida começa agora.</h2>
+          <p>Chame a Marina no WhatsApp e dê o primeiro passo para uma rotina mais forte, saudável e segura de si.</p>
+          <div class="mini">
+            <a href="https://www.instagram.com/marinaa.ccantoni/" target="_blank" rel="noopener">📸 @marinaa.ccantoni</a>
+            <a href="https://wa.me/5511910300671?text=Ol%C3%A1%2C%20Marina%21%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20treinos%20personalizados." target="_blank" rel="noopener">💬 11 91030-0671</a>
+            <div>🏋️ Treinos personalizados • Avaliação física • Consultoria online</div>
+          </div>
+          <a class="btn primary" href="https://wa.me/5511910300671?text=Ol%C3%A1%2C%20Marina%21%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20treinos%20personalizados." target="_blank" rel="noopener">Falar com Marina no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">Marina Cantoni • Personal Trainer • Team Marinexx</div></footer>
+  <div class="mobile-cta"><a class="btn primary" href="https://wa.me/5511910300671?text=Ol%C3%A1%2C%20Marina%21%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20treinos%20personalizados." target="_blank" rel="noopener">Chamar Marina no WhatsApp</a></div>
+</body>
+</html>
